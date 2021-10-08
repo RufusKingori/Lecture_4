@@ -5,11 +5,7 @@ def question_one():
     for i in range(1,11):
 
         print(i, "\t\t", i**2, "\t\t {0:0.2f}".format(1/i))
-
-
-
-
-
+question_one()
 
 def question_two():
     u_sentence = input("Enter your sentence: ")
@@ -20,7 +16,7 @@ def question_two():
         encoded_char = chr(encoded_char_code)
         encoded_string = encoded_string + encoded_char
     print(encoded_string)
-
+question_two()
 
 def question_three():
     first_num = int(input("Enter the first number:"))
@@ -29,7 +25,7 @@ def question_three():
     string_product = str(product)
     for char in string_product:
         print(char)
-
+question_three()
 
 
 def question_four():
@@ -41,12 +37,12 @@ def question_four():
         sum = sum + char_position
 
     print(sum)
-
+question_four()
 
 def question_six():
     for i in range(1,101):
         print(i, "\t\t", i**2,  "\t\t {0:0.3f}".format(i**0.5))
-
+question_six()
 
 
 def question_five():
@@ -63,19 +59,19 @@ def question_five():
         print("Excellent")
     else:
         print("Not applicable")
-
+question_five()
 
 def question_five_b():
     marks = int(input("Enter your marks:"))
-    if 90>=marks<=100:
+    if marks>=90 and marks<=100:
         print("A")
-    elif 80>=marks<=89:
+    elif marks>=80 and marks<=89:
         print("B")
-    elif 70>=marks<=79 :
+    elif marks>= 70 and marks<=79 :
         print("C")
-    elif 60>=marks<=69:
+    elif marks>=60 and marks<=69:
         print("D")
-    elif 1>=marks<=59:
+    elif marks>=1 and marks<=59:
         print("E")
     else:
         print("Not Applicable")
