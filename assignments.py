@@ -40,8 +40,11 @@ def question_four():
 question_four()
 
 def question_six():
+    table = open("numbers.txt", "w")
     for i in range(1,101):
-        print(i, "\t\t", i**2,  "\t\t {0:0.3f}".format(i**0.5))
+        print(i, "\t\t", i**2,  "\t\t {0:0.3f}".format(i**0.5), file= table)
+    table.close()
+
 question_six()
 
 
